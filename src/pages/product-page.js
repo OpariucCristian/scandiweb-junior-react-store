@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import {gql} from "graphql-tag"
 import { Query } from 'react-apollo';
 import {store} from '../store'
+import DOMPurify from 'dompurify';
  
 export class ProductPage extends Component {
   constructor(props){
@@ -150,7 +151,12 @@ currencyHandler(currencySign){
              </button>}
            
            
-           <p id="product-description">{product.description}</p>
+             <div
+                        className="product-info"
+                        dangerouslySetInnerHTML={{
+                            __html: DOMPurify.sanitize(product.description),
+                        }}
+                    ></div>
        </div>
      
      </div>}
