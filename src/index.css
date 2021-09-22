@@ -60,13 +60,17 @@ code {
   cursor: pointer;
   appearance: none;
 }
+
 .category-text{
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-style: normal;
 }
 .category-radio:checked + label{
+  
   color:#5ECE7B;
+  border-bottom: 0.15rem solid #5ece7b;
+  
 }
 .navbar-logo-container{
   margin-top: 0.3rem;
@@ -90,7 +94,7 @@ code {
 }
 #button-cart{
   border: 0;
-  margin-top: 0.3rem;
+  margin-top: 0.25rem;
   background-color: transparent;
   cursor: pointer;
 }
@@ -266,6 +270,8 @@ font-size: 0.9rem;
 }
 #product-info{
   margin-left: 5vh;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
   width: 70%;
 }
 #product-name{

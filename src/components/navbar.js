@@ -51,6 +51,7 @@ export default class Navbar extends Component {
                
                 <div id="navbar-content">
                 <div id="category-container">
+                    
                     <input className="category-radio" defaultChecked 
                     id="all" name="categories" type="radio" onClick={()=> store.dispatch({type:'UPDATE_CATEGORY',val:"all"})}/>
                     <label htmlFor="all" className="category">
